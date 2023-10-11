@@ -3,7 +3,7 @@
 namespace Beedelivery\Btg;
 
 
-use BeeDelivery\Btg\Utils\BtgConnection;
+use Beedelivery\Btg\Utils\BtgConnection;
 
 class Account
 {
