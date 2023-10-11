@@ -1,6 +1,6 @@
 <?php
 
-namespace BeeDelivery\Btg\Facades;
+namespace Beedelivery\Btg\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
