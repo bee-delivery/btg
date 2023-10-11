@@ -1,6 +1,6 @@
 <?php
 
-namespace BeeDelivery\Btg\Utils;
+namespace Beedelivery\Btg\Utils;
 
 use Illuminate\Support\Facades\Http;
 
