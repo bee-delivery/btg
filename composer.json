@@ -7,7 +7,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "BeeDelivery\\Btg\\": "src/"
+            "Beedelivery\\Btg\\": "src/"
         }
     },
     "authors": [
