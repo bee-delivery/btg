@@ -1,6 +1,6 @@
 <?php
 
-namespace BeeDelivery\Btg;
+namespace Beedelivery\Btg;
 
 use Carbon\Laravel\ServiceProvider;
 
