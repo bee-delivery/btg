@@ -58,15 +58,15 @@ class BtgConnection extends Connection
             $token         = $_SESSION["btgAuthorization"];
             $diffInMinutes = Carbon::parse($token['updated_at'])->diffInMinutes(now());
 
-            // Durante 23 horas retorna o access_token padrão
-            if ($diffInMinutes <= 1380) {
+            // Durante 30min horas retorna o access_token padrão
+            if ($diffInMinutes <= 30) {
                 $this->accessToken = $token['access_token'];
 
                 return $token;
             }
 
-            // Durante 9 dias utiliza o refresh token para gerar o token
-            if ($diffInMinutes <= 12960) {
+            // Durante 1 dia utiliza o refresh token para gerar o token
+            if ($diffInMinutes <= 1440) {
                 $params = [
                     'grant_type'    => 'refresh_token',
                     'refresh_token' => $token['refresh_token'],
