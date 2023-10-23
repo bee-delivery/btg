@@ -20,7 +20,7 @@ class Pix
     }
 
     /*
-     * Criar um QR Code Pix
+     * Criar um QR Code Pix (Locations)
      *
      * @return array
      */
@@ -30,13 +30,33 @@ class Pix
     }
 
     /*
-     * Obtem lista de QR Codes
+     * Obtem lista de QR Codes (Locations)
      *
      * @return array
      */
     public function listQrCodes(): array
     {
         return $this->http->get('/v1/companies/' . config('btg.account_id') . '/pix-cash-in/locations');
+    }
+
+    /*
+     * Criar um QR Code Pix (Instant Collections)
+     *
+     * @return array
+     */
+    public function createChargeQrCode($params): array
+    {
+        return $this->http->post('/v1/companies/' . config('btg.account_id') . '/pix-cash-in/instant-collections', $params);
+    }
+
+    /*
+     * Obtem lista de Cobrancas (Instant Collections)
+     *
+     * @return array
+     */
+    public function listChargeQrCodes(): array
+    {
+        return $this->http->get('/v1/companies/' . config('btg.account_id') . '/pix-cash-in/instant-collections');
     }
 
     /*
