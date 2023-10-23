@@ -1,6 +1,6 @@
 {
     "name": "beedelivery/btg",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Package for integration with BTG",
     "keywords": ["laravel", "bee", "btg"],
     "type": "library",
